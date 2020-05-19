@@ -99,7 +99,7 @@ def padding_function(message):
 '''
 #^ = XOR
 #& = AND
-#¬ = NOT
+#ï¿½ = NOT
 #ROR(x, n) = rotate x right by n
 #x >> n = right shift x by n
 
@@ -132,7 +132,7 @@ def Eta_1(x):
 
     return Eta_1
 
-#Chr = (x & y) ^ (¬x & z)
+#Chr = (x & y) ^ (ï¿½x & z)
 def Chr(x, y, z):
     NOT = 0b11111111111111111111111111111111
     Chr = (x & y) ^ ((x ^ NOT) & z)
@@ -192,6 +192,7 @@ def gen_keys(block):
 
         keys.append(int(block[(i * 32) : ((i * 32) + 32)], 2))
 
+    #this is wrong and won't work for longer messages. I NEED TO FIX THIS
 
     #make 48 new keys using the formula:
     #key[i] = key[i-16] ^ s0(key[i-15]) ^ key[i-7] ^ s1(key[i-2])
