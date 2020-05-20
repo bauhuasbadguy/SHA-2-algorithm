@@ -61,12 +61,12 @@ def ROR(number, rotdist, bit_length):
 
 #this is the function for padding the message out
 #it is the same for SHA1 and SHA2
-def padding_function(message):
 
+def padding_function(message):
     
     #first convert the message to a string
-
     binary_message = text2bin(message)
+
 
     #record the initial message length for later
     message_length = len(binary_message)
@@ -92,6 +92,7 @@ def padding_function(message):
         blocks.append(p[i * 512: (i * 512) + 512])
 
     return blocks
+
 '''
 ===========================================================
 ==== These are the functions that are used by the loop ====
@@ -149,40 +150,6 @@ def Maj(x, y, z):
 ==== These are the big functions that do the major bits of SHA-256 ====
 =======================================================================
 '''
-
-#this is the function for padding the message out
-#it is the same for SHA1 and SHA2
-def padding_function(message):
-
-    
-    #first convert the message to a string
-
-    binary_message = text2bin(message)
-
-    #record the initial message length for later
-    message_length = len(binary_message)
-
-    #add a one to the end of the message string. Now were in the
-    #padding stage
-    p = binary_message + '1'
-
-    #extend the length of p until len(p)%512 = 448
-    while len(p)%512 != 448:
-        p += '0'
-
-    #the final padding step, add the length of the starting message
-
-    p += bin(message_length)[2:].zfill(64)
-
-    block_no = int((len(p)/512))
-    
-    #splits the padded message into blocks
-    blocks = []
-    for i in range(block_no):
-
-        blocks.append(p[i * 512: (i * 512) + 512])
-
-    return blocks
 
 
 def gen_keys(block):
