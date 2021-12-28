@@ -12,7 +12,7 @@
    viewBox="0 0 215 202"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   inkscape:version="1.0.2 (1.0.2+r75+1)"
    sodipodi:docname="sha2_compress_function.svg"
    inkscape:export-filename="/home/stuart/Documents/encrytion_stuff/SHA-2-algorithm/sha2_compress_function.png"
    inkscape:export-xdpi="96"
@@ -464,16 +464,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="213.9274"
-     inkscape:cy="583.82862"
+     inkscape:zoom="0.7"
+     inkscape:cx="12.106853"
+     inkscape:cy="406.91785"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="1853"
-     inkscape:window-height="1025"
-     inkscape:window-x="67"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
@@ -484,7 +484,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -492,6 +492,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.00783;stroke-linejoin:round"
+       id="rect5582"
+       width="211.02359"
+       height="200.14383"
+       x="1.5547955"
+       y="1.258507" />
     <g
        id="g998"
        transform="translate(2.7864702,-87.213529)">
